@@ -1,0 +1,44 @@
+html{
+  width:100vw;
+  min-height: 100vh;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.bg-rings-img {
+  background-image: url("./assets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -10rem 13rem;
+}
+
+.bg-rings-img-skills{
+  background-position:13rem 30rem;
+}
+
+.bg-circle-img{
+  background-image: url("./assets/images/pattern-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 20rem;
+}
+
+
+.profile-pic-image{
+  background-image: url("./assets/images/image-profile-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10rem -10rem;
+  background-size: 100%;
+  
+
+}
