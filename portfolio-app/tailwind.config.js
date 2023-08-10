@@ -1,3 +1,6 @@
+import forms from '@tailwindcss/forms';
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -11,6 +14,7 @@ export default {
       'greyish-black' : "hsl(0,0%,14%)",
       'whitish-grey' : "hsl(0,0%,85%)",
       'white': "hsl(0,0%,100%)",
+      'light-red': "hsl(345,95%,68%)",
 
 
     },
@@ -22,7 +26,8 @@ export default {
         base: ['18px'],
         lg: ['24px'],
         xl: ['40px'],
-        '2xl': ['88px'],
+        '2xl': ['72px'],
+        '3xl': ['88px'],
       },
       lineHeight:{
         base: ['28px','36px'],
@@ -35,7 +40,9 @@ export default {
       xl:'-1.5px',
       '2xl':'-2.5px',
   },
-  plugins: [],
+  plugins: [
+    forms,
+  ],
 }
 }
 }
