@@ -91,10 +91,14 @@ export default function Form({contactRef}) {
         </form>
 
         {showSuccessModal && (
-                <div className="modal"> 
-                    <p>Your form was submitted successfully!</p>
-                </div>
-            )}
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-md">
+            <div className="modal-content bg-greyish-black p-8 rounded shadow-lg">
+            <p>Your form was submitted successfully!</p>
+            <button onClick={() => setShowSuccessModal(false)} className="text-white bg-red-600 px-4 py-2 mt-4 rounded">Close</button>
+            </div>
+        </div>
+        )}
+
       </section>
     );
   }
