@@ -39,7 +39,7 @@ export default function Form({contactRef}) {
             and I&rsquo;ll get back to you within 48 hours.
             </p>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center w-full  sm:max-w-sm md:max-w-md lg:max-w-lg lg:py-10 xl:max-w-xl px-2">
+        <form name="contact-form" data-netlify="true" onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-center w-full  sm:max-w-sm md:max-w-md lg:max-w-lg lg:py-10 xl:max-w-xl px-2">
 
           <div className=" relative flex flex-col items-center border-b border-white py-2 mb-4 w-full">
             <input {...register("fullName",{required:'Please enter your full name, so I know who you are!'})} className="appearance-none bg-greyish-black border-none w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="NAME" aria-label="Full name"/>
