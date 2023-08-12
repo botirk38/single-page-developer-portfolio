@@ -5,11 +5,10 @@ import { useState } from 'react';
 
 export default function Form({contactRef}) {
     const {register, handleSubmit,formState:{ errors }} = useForm();
-    const [showSuccessModal, setShowSuccessModal] = useState(false); // State for the modal
+    const [showSuccessModal, setShowSuccessModal] = useState(false); 
 
     const onSubmit = async (data) => {
         try {
-            // Change the URL to point to your Netlify function
             const response = await fetch('/.netlify/functions/sendForm', { 
                 method: 'POST',
                 headers: {
