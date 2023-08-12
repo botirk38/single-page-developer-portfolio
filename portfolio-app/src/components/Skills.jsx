@@ -24,14 +24,16 @@ export default function Skills(){
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">JavaScript</h1>
             </div>
 
-            
-
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start" >
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">React</h1>
             </div>
 
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Git</h1>
+            </div>
+
+            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
+                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">REST</h1>
             </div>
 
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">

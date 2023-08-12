@@ -4,6 +4,7 @@ import ageCalculatorApp from "../assets/images/ageCalculatorApp.webp";
 import socialMediaDashboard from "../assets/images/social-media-dashboard.webp";
 import newsLetterSignup from "../assets/images/newsletter-sign-up.webp";
 import newsHomePage from "../assets/images/news-homepage.webp";
+import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
 
 export default function Projects({ onContactClick }) {
   return (
@@ -19,6 +20,13 @@ export default function Projects({ onContactClick }) {
         link: 'https://space-tourism-website-botir.netlify.app/',
         code: 'https://github.com/botirk38/space-tourism-website-main',
         tech: ['HTML', 'CSS', 'REACT']
+      },
+      {
+        image: ipTrackerApp,
+        title: 'IP Address Tracker App',
+        link: 'https://ip-address-tracker-botir.netlify.app/',
+        code: 'https://github.com/botirk38?tab=repositories',
+        tech: ['HTML','CSS','REACT','REST']
       },
       {
         image: ageCalculatorApp,

@@ -9,15 +9,17 @@ export default function Form({contactRef}) {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:3001/submit-form', { 
+            // Change the URL to point to your Netlify function
+            const response = await fetch('/.netlify/functions/sendForm', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(data),
             });
-            console.log(response);
 
+            console.log(response);
+            
             if (response.ok) {
                 console.log('Form submitted successfully');
                 setShowSuccessModal(true);
@@ -28,6 +30,7 @@ export default function Form({contactRef}) {
             console.error('An error occurred:', error);
         }
     };
+    
 
     return (
       <section ref={contactRef} className="flex flex-col text-white justify-items-center items-center text-center bg-greyish-black w-full  bg-form-img border-white border-b lg:flex-row lg:px-10 lg:py-10 lg:items-start  ">
