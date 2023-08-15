@@ -3,8 +3,8 @@ import spaceTourismWebsite from "../assets/images/space-tourism-website.jpg";
 import ageCalculatorApp from "../assets/images/ageCalculatorApp.webp";
 import socialMediaDashboard from "../assets/images/social-media-dashboard.webp";
 import newsLetterSignup from "../assets/images/newsletter-sign-up.webp";
-import newsHomePage from "../assets/images/news-homepage.webp";
 import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
+import urlShorteningApp from "../assets/images/url-shortening-app.webp";
 
 export default function Projects({ onContactClick }) {
   return (
@@ -20,6 +20,13 @@ export default function Projects({ onContactClick }) {
         link: 'https://space-tourism-website-botir.netlify.app/',
         code: 'https://github.com/botirk38/space-tourism-website-main',
         tech: ['HTML', 'CSS', 'REACT']
+      },
+      {
+        image: urlShorteningApp,
+        title: 'Shortly URL Shortening App',
+        link: 'https://shortly-url-botir.netlify.app/',
+        code: 'https://github.com/botirk38/url-shortening-api-master',
+        tech: ['HTML', 'Tailwind', 'REACT', 'React Query', 'REST']
       },
       {
         image: ipTrackerApp,
@@ -49,13 +56,7 @@ export default function Projects({ onContactClick }) {
         code: 'https://github.com/botirk38/newsletter-signup',
         tech: ['HTML', 'CSS', 'REACT']
       },
-      {
-        image: newsHomePage,
-        title: 'News Homepage',
-        link: 'https://news-hompage-botir.netlify.app/',
-        code: 'https://github.com/botirk38/news-homepage-main',
-        tech: ['HTML', 'SASS', 'REACT']
-      }].map((project, index) => (
+     ].map((project, index) => (
         <div key={index} className="project-container flex justify-items-start items-center flex-col w-full relative mb-5">
           <a href={project.link} rel="noreferrer" target="_blank">
             <img
