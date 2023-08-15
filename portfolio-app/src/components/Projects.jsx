@@ -4,7 +4,7 @@ import ageCalculatorApp from "../assets/images/ageCalculatorApp.webp";
 import socialMediaDashboard from "../assets/images/social-media-dashboard.webp";
 import newsLetterSignup from "../assets/images/newsletter-sign-up.webp";
 import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
-import urlShorteningApp from "../assets/images/url-shortening-app.webp";
+import urlShorteningApp from "../assets/images/shortly.jpg";
 
 export default function Projects({ onContactClick }) {
   return (
