@@ -26,7 +26,7 @@ export default function Projects({ onContactClick }) {
         title: 'Shortly URL Shortening App',
         link: 'https://shortly-url-botir.netlify.app/',
         code: 'https://github.com/botirk38/url-shortening-api-master',
-        tech: ['HTML', 'Tailwind', 'REACT', 'React Query', 'REST']
+        tech: ['HTML', 'TAILWIND', 'REACT', 'REACT QUERY', 'REST']
       },
       {
         image: ipTrackerApp,
