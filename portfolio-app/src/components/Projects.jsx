@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import spaceTourismWebsite from "../assets/images/space-tourism-website.jpg";
 import ageCalculatorApp from "../assets/images/ageCalculatorApp.webp";
 import socialMediaDashboard from "../assets/images/social-media-dashboard.webp";
-import newsLetterSignup from "../assets/images/newsletter-sign-up.webp";
 import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
 import urlShorteningApp from "../assets/images/shortly.jpg";
+import multiStepForm from "../assets/images/multi-step-form.jpg";
 
 export default function Projects({ onContactClick }) {
   return (
@@ -21,12 +21,21 @@ export default function Projects({ onContactClick }) {
         code: 'https://github.com/botirk38/space-tourism-website-main',
         tech: ['HTML', 'CSS', 'REACT']
       },
+
+      {
+        image: multiStepForm,
+        title: 'Multi-Step Form',
+        link: 'https://multi-step-form-botir.netlify.app/',
+        code: 'https://github.com/botirk38/multi-step-form-main',
+        tech: ['HTML', 'Styled Components', 'REACT', 'TypeScript']
+      },
+
       {
         image: urlShorteningApp,
         title: 'Shortly URL Shortening App',
         link: 'https://shortly-url-botir.netlify.app/',
         code: 'https://github.com/botirk38/url-shortening-api-master',
-        tech: ['HTML', 'TAILWIND', 'REACT', 'REACT QUERY', 'REST']
+        tech: ['HTML', 'TAILWIND', 'REACT', 'UseSWR']
       },
       {
         image: ipTrackerApp,
@@ -49,13 +58,7 @@ export default function Projects({ onContactClick }) {
         code: 'https://github.com/botirk38/social-media-dashboard-with-theme-switcher-master',
         tech: ['HTML', 'CSS', 'REACT']
       },
-      {
-        image: newsLetterSignup,
-        title: 'Newsletter Signup',
-        link: 'https://botirk38.github.io/newsletter-signup/',
-        code: 'https://github.com/botirk38/newsletter-signup',
-        tech: ['HTML', 'CSS', 'REACT']
-      },
+  
      ].map((project, index) => (
         <div key={index} className="project-container flex justify-items-start items-center flex-col w-full relative mb-5">
           <a href={project.link} rel="noreferrer" target="_blank">
