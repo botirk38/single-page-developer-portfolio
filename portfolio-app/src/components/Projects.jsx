@@ -27,7 +27,7 @@ export default function Projects({ onContactClick }) {
         title: 'Multi-Step Form',
         link: 'https://multi-step-form-botir.netlify.app/',
         code: 'https://github.com/botirk38/multi-step-form-main',
-        tech: ['HTML', 'Styled Components', 'REACT', 'TypeScript']
+        tech: ['HTML', 'STYLED COMPONENTS', 'REACT', 'TYPESCRIPT']
       },
 
       {
@@ -35,14 +35,14 @@ export default function Projects({ onContactClick }) {
         title: 'Shortly URL Shortening App',
         link: 'https://shortly-url-botir.netlify.app/',
         code: 'https://github.com/botirk38/url-shortening-api-master',
-        tech: ['HTML', 'TAILWIND', 'REACT', 'UseSWR']
+        tech: ['HTML', 'TAILWIND', 'REACT', 'USESWR']
       },
       {
         image: ipTrackerApp,
         title: 'IP Address Tracker App',
         link: 'https://ip-address-tracker-botir.netlify.app/',
         code: 'https://github.com/botirk38?tab=repositories',
-        tech: ['HTML','CSS','REACT','REST']
+        tech: ['HTML','CSS','REACT','REST API']
       },
       {
         image: ageCalculatorApp,
