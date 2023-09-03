@@ -41,14 +41,8 @@ export default function Skills(){
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">TypeScript</h1>
             </div>
 
-            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start" >
-
-                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Styled Components</h1>
-            </div>
-
-
-            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
-                <h1 className="text-xl text-white  font-bold mb-8 uppercase">Accessibility</h1>
+            <div className="flex justify-center items-start flex-col w-full text-center w-full sm:justify-start">
+            <h1 className="text-xl text-white font-bold mb-5 uppercase">Accessibility</h1>
             </div>
 
 

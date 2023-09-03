@@ -87,7 +87,7 @@ export default function Form({contactRef}) {
             )}
           </div>
           <p className='self-end text-light-red'>{errors.message?.message}</p>
-          <div className="flex justify-center items-end flex-col text-center mb-20 mt-5 w-full ">
+          <div className="flex justify-center items-end flex-col text-center mb-20 mt-5 w-full mr-5">
             <button type="submit" className="text-white text-base py-6 border-0 border-b-4 border-limish-green uppercase tracking-widest font-bold hover:text-limish-green">Send Message</button>
           </div>
         </form>
