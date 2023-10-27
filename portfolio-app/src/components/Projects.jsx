@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import spaceTourismWebsite from "../assets/images/space-tourism-website.jpg";
-import ageCalculatorApp from "../assets/images/ageCalculatorApp.webp";
-import socialMediaDashboard from "../assets/images/social-media-dashboard.webp";
 import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
 import urlShorteningApp from "../assets/images/shortly.jpg";
 import multiStepForm from "../assets/images/multi-step-form.jpg";
+import kanbanApp from "../assets/images/desktop-img-dark.png";
+import todoApp from "../assets/images/todo-app.jpg";
 
 export default function Projects({ onContactClick }) {
   return (
@@ -14,7 +14,16 @@ export default function Projects({ onContactClick }) {
         <button onClick={onContactClick} className="text-white text-base py-6 px-3 border-0 border-b-4 border-limish-green uppercase tracking-widest font-bold hover:text-limish-green">Contact Me</button>
       </div>
 
-      {[{
+      {[
+      {
+        image:kanbanApp,
+        title: "Kanban Task Management Web App",
+        link: 'https://kanban-app-botir.vercel.app/',
+        code: 'https://github.com/botirk38/kanban-task-management-app',
+        tech: ['NEXT.JS', 'TAILWIND', 'TYPESCRIPT', 'REACT']
+      },
+
+      {
         image: spaceTourismWebsite,
         title: 'Space Tourism Website',
         link: 'https://space-tourism-website-botir.netlify.app/',
@@ -45,19 +54,15 @@ export default function Projects({ onContactClick }) {
         tech: ['HTML','CSS','REACT','REST API']
       },
       {
-        image: ageCalculatorApp,
-        title: 'Age Calculator App',
-        link: 'https://age-calculator-app-botir.netlify.app/',
-        code: 'https://github.com/botirk38/age-calculator-app',
-        tech: ['HTML', 'CSS', 'REACT']
-      },
-      {
-        image: socialMediaDashboard,
-        title: 'Social Media Dashboard',
-        link: 'https://social-media-dashboard-botir.netlify.app/',
-        code: 'https://github.com/botirk38/social-media-dashboard-with-theme-switcher-master',
-        tech: ['HTML', 'CSS', 'REACT']
-      },
+        image: todoApp,
+        title: 'Todo App',
+        link: 'https://todo-app-botir.netlify.app/',
+        code: 'https://github.com/botirk38/todo-app-main/tree/main',
+        tech: ['HTML','SASS','REACT','TYPESCRIPT']
+
+
+      }
+      
   
      ].map((project, index) => (
         <div key={index} className="project-container flex justify-items-start items-center flex-col w-full relative mb-5">

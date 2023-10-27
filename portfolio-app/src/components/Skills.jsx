@@ -17,7 +17,11 @@ export default function Skills(){
             </div>
 
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
-                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Tailwind CSS</h1>
+                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Tailwind</h1>
+            </div>
+
+            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start" >
+                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">TypeScript</h1>
             </div>
 
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
@@ -28,6 +32,12 @@ export default function Skills(){
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">React</h1>
             </div>
 
+            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start" >
+                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Next.js</h1>
+            </div>
+
+
+
             <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start">
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">Git</h1>
             </div>
@@ -36,13 +46,9 @@ export default function Skills(){
                 <h1 className="text-xl text-white  font-bold -mb-5 uppercase">REST</h1>
             </div>
 
-            <div className="flex justify-center items-start flex-col text-center w-full sm:justify-start" >
-
-                <h1 className="text-xl text-white  font-bold -mb-5 uppercase">TypeScript</h1>
-            </div>
-
+           
             <div className="flex justify-center items-start flex-col w-full text-center w-full sm:justify-start">
-            <h1 className="text-xl text-white font-bold mb-5 uppercase">Accessibility</h1>
+                <h1 className="text-xl text-white font-bold mb-5 uppercase">Accessibility</h1>
             </div>
 
 
