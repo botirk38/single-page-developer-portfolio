@@ -4,7 +4,7 @@ import ipTrackerApp from "../assets/images/ipAddressTracker.jpeg";
 import urlShorteningApp from "../assets/images/shortly.jpg";
 import multiStepForm from "../assets/images/multi-step-form.jpg";
 import kanbanApp from "../assets/images/desktop-img-dark.png";
-import todoApp from "../assets/images/todo-app.jpg";
+import todoApp from "../assets/images/todo-app-dark.png";
 
 export default function Projects({ onContactClick }) {
   return (
