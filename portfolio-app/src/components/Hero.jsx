@@ -16,7 +16,7 @@ export default function Hero({ onContactClick }) {
                     Nice to meet you! <span className="">I&apos;m</span>
                     <span className=" underline decoration-limish-green underline-offset-4 p-3"> Botir Khaltaev.</span>
                 </h1>
-                <p className='text-white text-lg p-3'>A creative frontend developer on a mission to craft visually stunning and user-friendly web applications that leave a lasting impact.</p>
+                <p className='text-white text-lg p-3'>A creative full stack developer on a mission to craft visually stunning and user-friendly web applications that leave a lasting impact.</p>
             </div>
                 <div className="px-5 md:px-0">
                 <button onClick={onContactClick} className="text-white text-base py-6 px-3 border-0 border-b-4 border-limish-green uppercase tracking-widest font-bold  hover:text-limish-green">Contact Me</button>

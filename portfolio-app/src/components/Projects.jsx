@@ -20,7 +20,7 @@ export default function Projects({ onContactClick }) {
         title: "Kanban Task Management Web App",
         link: 'https://kanban-app-botir.vercel.app/',
         code: 'https://github.com/botirk38/kanban-task-management-app',
-        tech: ['NEXT.JS', 'TAILWIND', 'TYPESCRIPT', 'REACT']
+        tech: ['NEXT.JS', 'TAILWIND', 'TYPESCRIPT', 'REACT', 'PYTHON', 'DJANGO']
       },
 
       {
