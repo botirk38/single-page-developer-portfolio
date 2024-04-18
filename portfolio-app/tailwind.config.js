@@ -1,6 +1,25 @@
 import forms from '@tailwindcss/forms';
 
 
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -15,8 +34,6 @@ export default {
       'whitish-grey' : "hsl(0,0%,85%)",
       'white': "hsl(0,0%,100%)",
       'light-red': "hsl(345,95%,68%)",
-
-
     },
     extend: {
       fontFamily: {
@@ -34,15 +51,26 @@ export default {
         lg: ['32px','40px'],
         xl: ['56px','64px'],
         '2xl': ['88px','96px'],
+      },
+      letterSpacing:{
+        xl:'-1.5px',
+        '2xl':'-2.5px',
+      },
 
+      animation: {
+        scroll:  "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
     },
-    letterSpacing:{
-      xl:'-1.5px',
-      '2xl':'-2.5px',
+    keyframes: {
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
+    }
   },
   plugins: [
     forms,
+    addVariablesForColors, 
   ],
-}
-}
 }
